@@ -1,4 +1,4 @@
-Package: MplusAutomation
+Package: MplusAutomationFork
 Type: Package
 Title: An R Package for Facilitating Large-Scale Latent Variable Analyses in Mplus
 Version: 0.7-3
@@ -42,5 +42,5 @@ Suggests:
     testthat
 LazyLoad: yes
 LazyData: yes
-RoxygenNote: 6.1.1
+RoxygenNote: 7.0.2
 Encoding: UTF-8

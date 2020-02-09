@@ -466,28 +466,29 @@ recurseReplace <- function(templateTags, initCollection, curiterator=1L) {
 
       cat(paste("writing file: ", filename, "\n", sep=""))
       curdir <- getwd()
+      
 
       #figure out the output directory
-      outputDir <- finalInitCollection$outputDirectory
+      outputDir <- trimws(finalInitCollection$outputDirectory)
 
       if (!file.exists(outputDir)) {
         dir.create(outputDir, recursive=TRUE)
       }
 
-      setwd(outputDir)
+      #setwd(outputDir)
 
       #make sure that no line is more than 90 chars
       toWrite <- unlist(lapply(toWrite, function(line) {
         if (nchar(line) > 90) {
-          strwrap(line, width=85, exdent=5)
+          paste0(outputDir, '/', strwrap(line, width=85, exdent=5))
         } else {
-          line
+          paste0(outputDir, '/', line)
         }
       }))
 
       writeLines(toWrite, con = filename, sep = "\n")
 
-      setwd(curdir)
+      #on.exit(setwd(curdir))
     }
   }
 }

@@ -1,0 +1,28 @@
+ C:/Users/ENA/Documents/GitHub/TabulationAutomation/vignettes /DATA: FILE IS " C:/Users/ENA/Documents/GitHub/TabulationAutomation/vignettes ";
+ C:/Users/ENA/Documents/GitHub/TabulationAutomation/vignettes /
+ C:/Users/ENA/Documents/GitHub/TabulationAutomation/vignettes /VARIABLE:
+ C:/Users/ENA/Documents/GitHub/TabulationAutomation/vignettes /  ;
+ C:/Users/ENA/Documents/GitHub/TabulationAutomation/vignettes /
+ C:/Users/ENA/Documents/GitHub/TabulationAutomation/vignettes /ANALYSIS:
+ C:/Users/ENA/Documents/GitHub/TabulationAutomation/vignettes /  ESTIMATOR = mlr;
+ C:/Users/ENA/Documents/GitHub/TabulationAutomation/vignettes /  INTEGRATION = MONTECARLO;
+ C:/Users/ENA/Documents/GitHub/TabulationAutomation/vignettes /
+ C:/Users/ENA/Documents/GitHub/TabulationAutomation/vignettes /MODEL:
+ C:/Users/ENA/Documents/GitHub/TabulationAutomation/vignettes /INTRUSIONS by = b1-b5; AVOIDANCE by = c1-c2; NEGAFF by = d1-d7; ANHEDONIA by =
+ C:/Users/ENA/Documents/GitHub/TabulationAutomation/vignettes /     e1-e6; DYSPHAROUSAL by = b1-b5; ANXAROUSAL by = c1-c2; dsm5*; dysphoria*;
+ C:/Users/ENA/Documents/GitHub/TabulationAutomation/vignettes /     dysphoricarousal*; anhedonia*; externalizing*; hybrid*; ;
+ C:/Users/ENA/Documents/GitHub/TabulationAutomation/vignettes /
+ C:/Users/ENA/Documents/GitHub/TabulationAutomation/vignettes /OUTPUT:
+ C:/Users/ENA/Documents/GitHub/TabulationAutomation/vignettes /  TECH1 TECH3 TECH4 TECH8 TECH10 residual standardized cinterval patterns;
+ C:/Users/ENA/Documents/GitHub/TabulationAutomation/vignettes /
+ C:/Users/ENA/Documents/GitHub/TabulationAutomation/vignettes /PLOT:
+ C:/Users/ENA/Documents/GitHub/TabulationAutomation/vignettes /  TYPE = plot1;
+ C:/Users/ENA/Documents/GitHub/TabulationAutomation/vignettes /  TYPE = plot2;
+ C:/Users/ENA/Documents/GitHub/TabulationAutomation/vignettes /  TYPE = plot3;
+ C:/Users/ENA/Documents/GitHub/TabulationAutomation/vignettes /  MONITOR = ON;
+ C:/Users/ENA/Documents/GitHub/TabulationAutomation/vignettes /
+ C:/Users/ENA/Documents/GitHub/TabulationAutomation/vignettes /SAVEDATA:
+ C:/Users/ENA/Documents/GitHub/TabulationAutomation/vignettes /  FILE IS "FScores_anhedonia.csv";
+ C:/Users/ENA/Documents/GitHub/TabulationAutomation/vignettes /  SAVE IS fscores;
+ C:/Users/ENA/Documents/GitHub/TabulationAutomation/vignettes /  FORMAT IS free;
+ C:/Users/ENA/Documents/GitHub/TabulationAutomation/vignettes /
