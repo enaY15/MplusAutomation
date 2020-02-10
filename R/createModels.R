@@ -209,7 +209,7 @@ createModels <- function(templatefile) {
   if (length(startinit) != 1 || length(endinit) != 1) {
     stop("Unable to find init section in template file.")
   }
-
+  
   # extract init section
   initSection <- readfile[(startinit+1):(endinit-1)]
 
@@ -470,23 +470,25 @@ recurseReplace <- function(templateTags, initCollection, curiterator=1L) {
 
       #figure out the output directory
       outputDir <- trimws(finalInitCollection$outputDirectory)
+      # finalInitCollection$factorNames <- trimws(finalInitCollection$factorNames)
+      # finalInitCollection$factorDefs <- trimws(finalInitCollection$factorDefs)
 
       if (!file.exists(outputDir)) {
         dir.create(outputDir, recursive=TRUE)
       }
 
       #setwd(outputDir)
-
+#options(browser())
       #make sure that no line is more than 90 chars
       toWrite <- unlist(lapply(toWrite, function(line) {
         if (nchar(line) > 90) {
-          paste0(outputDir, '/', strwrap(line, width=85, exdent=5))
+          strwrap(line, width=85, exdent=5)
         } else {
-          paste0(outputDir, '/', line)
+          line
         }
       }))
 
-      writeLines(toWrite, con = filename, sep = "\n")
+      cat(toWrite, file = paste0(outputDir, '/', filename), sep = "\n")
 
       #on.exit(setwd(curdir))
     }
